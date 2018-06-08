@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context=".LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- Here you can put your logo or brand name -->
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-40dp"
+                android:text="Registrar"
+                android:textAlignment="center"
+                android:textColor="#ffff"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/et_dni"
+                    android:layout_width="246dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@android:color/transparent"
+                    android:drawablePadding="12dp"
+                    android:ems="10"
+                    android:hint="@string/text_input_dni"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textColor="@color/color_text_input_login"
+                    android:textColorHint="#fff" />
+
+                <Button
+                    android:id="@+id/bt_buscar"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:layout_width="99dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/background_login"
+                    android:clickable="true"
+                    android:padding="16dp"
+                    android:text="Buscar"
+                    android:textAllCaps="false"
+                    android:textColor="@color/color_text_boton_login"
+                    android:textSize="18sp"
+                    android:theme="@style/RaisedButtonDark" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db" />
+
+            <EditText
+                android:id="@+id/et_apellido_paterno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Apellido paterno"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColor="@color/color_text_boton_login"
+                android:textColorHint="#fff">
+            </EditText>
+            <EditText
+                android:id="@+id/et_apellido_materno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Apellido materno"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColor="@color/color_text_boton_login"
+                android:textColorHint="#fff">
+            </EditText>
+            <EditText
+                android:id="@+id/et_direccion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Direccion"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColor="@color/color_text_boton_login"
+                android:textColorHint="#fff">
+            </EditText>
+            <EditText
+                android:id="@+id/et_sexo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Sexo"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColor="@color/color_text_boton_login"
+                android:textColorHint="#fff">
+            </EditText>
+            <EditText
+                android:id="@+id/et_clave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Ingrese clave"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColor="@color/color_text_boton_login"
+                android:textColorHint="#fff">
+            </EditText>
+            <EditText
+                android:id="@+id/et_numero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Numero telefono"
+                android:maxLines="1"
+                android:padding="10dp"
+                android:textColor="@color/color_text_boton_login"
+                android:textColorHint="#fff">
+            </EditText>
+            <CheckBox
+                android:id="@+id/chb_acepto_termino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="8dp"
+                android:text="Acepto terminos y condiciones"
+                android:textColor="#fff" />
+            <Button
+                android:id="@+id/btnlogin"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/background_login"
+                android:clickable="true"
+                android:padding="16dp"
+                android:text="Registrar"
+                android:textAllCaps="false"
+                android:textColor="@color/color_text_boton_login"
+                android:theme="@style/RaisedButtonDark"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
